@@ -152,7 +152,7 @@ async function canRecognizeFaces(sta){
             //sendMsg(results[i]["label"]+":"+results[i]["distance"])
 
             $.ajax({
-                url: "https://io.adafruit.com/api/v2/"+username+"/feeds/door/data?X-AIO-Key="+inputtext.value,
+                url: "https://io.adafruit.com/api/v2/"+username+"/feeds/door_lock/data?X-AIO-Key="+inputtext.value,
                 type: "POST",
                 data: {
                   "value":lab+dis
